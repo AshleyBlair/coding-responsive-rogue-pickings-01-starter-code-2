@@ -45,6 +45,7 @@ h4 {
 }
 
 p {
+	font-size: 1rem;
 	line-height: 36px;
 }
 
@@ -72,12 +73,13 @@ header h1 span {
 }
 
 header nav {
+	padding: 20px 0;
 	/* float: right; */
 	/* padding: 46px 0; */
 }
 
 header nav ul {
-	/* margin: 0; */
+	margin: 0;
 	padding: 0;
 	list-style: none;
 }
@@ -129,25 +131,25 @@ header nav ul li a {
 	box-sizing: border-box;
 	/* float: left; */
 	/* padding: 0 40px; */
-	width: 100%;
+	/* width: 100%; */
 }
 
 .section-one {
-	/* width: 29%; */
+	width: 100%;
 }
 
 .section-two {
-	/* width: 42%; */
+	width: 100%;
 	border-top: 5px solid #EEE;
 	border-bottom: 5px solid #EEE;
 }
 
 .section-three {
-	/* width: 29%; */
+	width: 100%;
 }
 
 .bottom-section h3 {
-	/* margin: 30px 0; */
+	margin: 30px 0;
 }
 
 .menu-list {
@@ -157,7 +159,7 @@ header nav ul li a {
 
 .menu-list li {
 	color: #45610E;
-	font-size: 1em;
+	font-size: 1rem;
 	line-height: 36px;
 }
 
@@ -177,13 +179,74 @@ footer span {
 	font-size: .875em;
 }
 
+
+
 /*--- TABLET ----*/
 
-@media (min-width: 481px) {
+@media all and (min-width: 768px) {
+	.bottom-section .content-wrapper {
+		border-top: 5px solid #EEE;
+		border-bottom: 5px solid #EEE;
+		justify-content: space-evenly;
+		width: 90%;
+	}
+
+	.section-one {
+		width: 26%;
+		/* padding-right: 1.875em; */
+	}
+	
 	.section-two {
-		/* width: 42%; */
-		/* border-left: 5px solid #EEE;
-		border-right: 5px solid #EEE; */
+		border-right: 5px solid #EEE;
+		border-left: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+		width: 40%;
+		padding-left: 1.875em;
+		padding-right: 1.875em;
+
+	}
+	
+	.section-three {
+		width: 26%;
+		/* padding-left: 1.875em; */
 	}
 }
+
+
 /*---- DESKTOP ----*/
+
+@media all and (min-width: 1200px) {
+	body {
+		font-size: 1em;
+	}
+
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	header h1 {
+		/* float: left; */
+		padding: 0;
+		/* padding: 2.375rem 0 1.25rem 0; */
+		width: 30%;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		/* float: right;
+		padding: 46px 0; */
+		width: 21%;
+	}
+
+	header nav ul {
+		/* margin: 0; */
+		/* padding: 0;
+		list-style: none; */
+		display: flex;
+		justify-content: space-between;
+	}
+}
