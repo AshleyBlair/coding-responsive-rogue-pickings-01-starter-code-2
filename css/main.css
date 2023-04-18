@@ -60,8 +60,8 @@ header {
 
 header h1 {
 	/* float: left; */
-	/* margin: 0; */
-	padding: 2.375em 0 1.25em 0;
+	margin: 0;
+	padding: 2.375rem 0 1.25rem 0;
 	width: 100%;
 	/* text-decoration: underline; */
 	border-bottom: .1875em solid #77a466;
@@ -128,7 +128,7 @@ header nav ul li a {
 .section-three {
 	box-sizing: border-box;
 	/* float: left; */
-	padding: 0 40px;
+	/* padding: 0 40px; */
 	width: 100%;
 }
 
@@ -138,8 +138,8 @@ header nav ul li a {
 
 .section-two {
 	/* width: 42%; */
-	border-left: 5px solid #EEE;
-	border-right: 5px solid #EEE;
+	border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE;
 }
 
 .section-three {
@@ -176,3 +176,14 @@ footer span {
 	color: #45610E;
 	font-size: .875em;
 }
+
+/*--- TABLET ----*/
+
+@media (min-width: 481px) {
+	.section-two {
+		/* width: 42%; */
+		/* border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE; */
+	}
+}
+/*---- DESKTOP ----*/
